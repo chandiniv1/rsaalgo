@@ -24,7 +24,7 @@ This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("decode called")
-		encrypted, _ := cmd.Flags().GetString("hello")
+		encrypted, _ := cmd.Flags().GetString("decode")
 		convencrypted := []int64{}
 		//splitting the hello with  space
 		str := strings.Split(encrypted, " ")

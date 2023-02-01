@@ -52,11 +52,11 @@ func decryption(encrypted_text int64) int64 {
 	return int64(decrypted)
 }
 func init() {
-	p := 3
-	q := 7
+	p := 13
+	q := 17
 	n = p * q
 	phi := (p - 1) * (q - 1)
-	e := 2
+	e := 7
 	// d:=((k*phi)+1)/e
 	for e < phi {
 		//e must be smaller than phi and coprime to phi
